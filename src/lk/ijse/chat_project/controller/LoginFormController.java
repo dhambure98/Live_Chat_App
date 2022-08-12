@@ -28,7 +28,7 @@ public class LoginFormController {
                 this.root.getChildren().clear();
                 this.root.getChildren()
                         .add(FXMLLoader.
-                                load(this.getClass().getResource("ClientUi.fxml")));
+                                load(this.getClass().getResource("/lk/ijse/chat_project/view/ClientUi.fxml")));
 
             } else {
                 new Alert(Alert.AlertType.WARNING, "Wrong Password Or User Name !",
