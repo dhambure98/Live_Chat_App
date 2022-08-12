@@ -1,14 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.chat_project.controller.LoginFormController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane fx:id="root" prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #ff9633;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_project.controller.LoginFormController">
+   <children>
+      <AnchorPane layoutX="125.0" layoutY="70.0" prefHeight="540.0" prefWidth="750.0" style="-fx-background-color: #fff2e6; -fx-background-radius: 60; -fx-border-radius: 60;">
+         <children>
+            <Label alignment="CENTER" layoutY="14.0" prefHeight="50.0" prefWidth="750.0" text="SIGN UP" textAlignment="CENTER" textFill="#ff6600" underline="true">
+               <font>
+                  <Font name="Arial Bold" size="30.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="125.0" fitWidth="135.0" layoutX="312.0" layoutY="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/fox_icon.png" />
+               </image>
+            </ImageView>
+            <JFXPasswordField fx:id="txtPw" focusColor="BLACK" labelFloat="true" layoutX="175.0" layoutY="350.0" prefHeight="35.0" prefWidth="400.0" promptText="PASSWORD">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXTextField fx:id="txtUserName" focusColor="BLACK" labelFloat="true" layoutX="175.0" layoutY="270.0" prefHeight="35.0" prefWidth="400.0" promptText="USER NAME">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </JFXTextField>
+            <JFXButton fx:id="btnLog" buttonType="RAISED" layoutX="225.0" layoutY="429.0" onAction="#btnLogOnAction" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #ffa34d;" text="SIGN IN" textFill="#252525">
+               <font>
+                  <Font name="Arial Bold" size="20.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="267.0" layoutY="511.0" text="Developed By Akila Dhambure Liyanage">
+               <font>
+                  <Font name="Arial" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
 </AnchorPane>
