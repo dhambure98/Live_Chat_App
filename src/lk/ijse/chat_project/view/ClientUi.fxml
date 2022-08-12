@@ -1,14 +1,168 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="lk.ijse.chat_project.controller.ClientUiController"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="680.0" prefWidth="1000.0" style="-fx-background-color: #ff9633;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_project.controller.ClientUiController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="925.0" layoutY="615.0" prefHeight="46.0" prefWidth="57.0" text=".">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="57.0" fitWidth="63.0" layoutX="17.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/fox_icon.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="88.0" layoutY="25.0" prefHeight="46.0" prefWidth="82.0" text="USER" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial Bold" size="23.0" />
+         </font>
+      </Label>
+      <Separator layoutX="23.0" layoutY="79.0" prefHeight="4.0" prefWidth="265.0" style="-fx-background-color: white;">
+         <opaqueInsets>
+            <Insets left="1.0" right="1.0" />
+         </opaqueInsets></Separator>
+      <Pane layoutX="14.0" layoutY="93.0" prefHeight="303.0" prefWidth="274.0">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="66.0" layoutY="3.0" prefHeight="57.0" prefWidth="209.0" text="USER 01" textAlignment="CENTER">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="6.0" layoutY="3.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/cat-profile.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="65.0" layoutY="67.0" prefHeight="57.0" prefWidth="209.0" text="USER 02">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="5.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/cat-profile.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="65.0" layoutY="130.0" prefHeight="57.0" prefWidth="209.0" text="USER 03">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font></JFXButton>
+            <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="5.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/cat-profile.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="65.0" layoutY="193.0" prefHeight="57.0" prefWidth="209.0" text="USER 04">
+               <font>
+                  <Font name="Arial Bold" size="18.0" />
+               </font>
+            </JFXButton>
+            <ImageView fitHeight="57.0" fitWidth="64.0" layoutX="5.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@assets/cat-profile.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <ImageView fitHeight="40.0" fitWidth="18.0" layoutX="273.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/circled-menu.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextArea fx:id="txtMessageArea" layoutX="291.0" layoutY="79.0" prefHeight="495.0" prefWidth="699.0" />
+      <ImageView fitHeight="46.0" fitWidth="102.0" layoutX="295.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/group-foreground-selected.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="352.0" layoutY="18.0" prefHeight="46.0" prefWidth="104.0" text="Group 1" textFill="#f2f2f2">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="18.0" layoutX="975.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/circled-menu.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="846.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/phone-disconnected.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="913.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/video-call.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="31.0" fitWidth="35.0" layoutX="937.0" layoutY="626.0" onMouseClicked="#sendMessage" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/filled-sent.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="336.0" layoutY="626.0" onMouseClicked="#photoUpload" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/camera.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="35.0" fitWidth="35.0" layoutX="287.0" layoutY="627.0" onMouseClicked="#emojiUpload" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@assets/smile-beam.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <TextField fx:id="txtMessage" layoutX="385.0" layoutY="623.0" prefHeight="39.0" prefWidth="528.0" promptText="Message" />
+      <JFXTextField fx:id="txtName" focusColor="WHITE" layoutX="385.0" layoutY="584.0" prefHeight="31.0" prefWidth="528.0" promptText="User Name" unFocusColor="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="15.0" />
+         </font>
+      </JFXTextField>
+   </children>
 </AnchorPane>
