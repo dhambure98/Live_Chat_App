@@ -164,5 +164,10 @@
             <Font name="Arial Unicode MS" size="15.0" />
          </font>
       </JFXTextField>
+      <Label layoutX="64.0" layoutY="632.0" text="Play Tech (Pvt) Ltd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
