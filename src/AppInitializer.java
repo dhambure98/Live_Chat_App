@@ -6,6 +6,11 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
+/**
+ * @author : A.D.Liyanage
+ * @since : 0.1.0
+ **/
+
 public class AppInitializer extends Application {
 
     public static void main(String[] args) {

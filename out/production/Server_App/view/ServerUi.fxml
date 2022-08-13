@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="controller.ServerUiController"
-            prefHeight="400.0" prefWidth="600.0">
 
+<AnchorPane prefHeight="450.0" prefWidth="700.0" style="-fx-background-color: #ff9633;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ServerUiController">
+   <children>
+      <Label alignment="CENTER" prefHeight="49.0" prefWidth="700.0" text="Server " textFill="WHITE">
+         <font>
+            <Font name="Arial Unicode MS" size="30.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtMessageArea" editable="false" layoutX="25.0" layoutY="57.0" prefHeight="350.0" prefWidth="650.0" />
+      <Label layoutX="285.0" layoutY="416.0" text="Play Tech (Pvt) Ltd">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+   </children>
 </AnchorPane>

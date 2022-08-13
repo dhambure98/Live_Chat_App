@@ -13,6 +13,11 @@ import java.io.DataOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 
+/**
+ * @author : A.D.Liyanage
+ * @since : 0.1.0
+ **/
+
 public class ClientUiController {
     public TextArea txtMessageArea;
     public TextField txtMessage;
